@@ -5,7 +5,7 @@ import { Button } from "./../components/shared/button/Button";
 function App() {
   return (
     <div>
-      <Button desc="big" isBig />
+      <Button desc="big" shortcut="b" isBig />
       <Button desc="small" />
     </div>
   );

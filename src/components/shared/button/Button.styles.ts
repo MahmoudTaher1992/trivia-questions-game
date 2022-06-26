@@ -1,8 +1,13 @@
 import styled from "styled-components";
 import { IButtonProps } from "./Button.props";
 
+export const StyledButtonDiv = styled.div<IButtonProps>`
+  position: relative;
+  width: fit-content;
+`;
+
 export const StyledButton = styled.button<IButtonProps>`
-  ${({ isBig }) => (isBig ? `padding: 15px;` : `padding: 5px 20px;`)}
+  ${({ isBig }) => (isBig ? `padding: 15px 35px;` : `padding: 5px 35px;`)}
 
   font-size: 20px;
 
@@ -19,4 +24,11 @@ export const StyledButton = styled.button<IButtonProps>`
   :active {
     background-color: pink;
   }
+`;
+
+export const StyledShortcut = styled.div<IButtonProps>`
+  position: absolute;
+  top: 1px;
+  left: 4px;
+  z-index: 100;
 `;
