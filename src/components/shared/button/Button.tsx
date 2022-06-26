@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledButton } from "./Styles";
+import { StyledButton } from "./Button.styles";
 import { IButtonProps } from "./Button.props";
 
 export const Button: React.FC<IButtonProps> = ({ desc, isBig }) => {
